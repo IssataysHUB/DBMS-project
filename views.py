@@ -11,7 +11,7 @@ from django.core.files.storage import FileSystemStorage
 
 
 def books(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     print("Connected to Oracle")
     sql = "Select * from books"
@@ -31,7 +31,7 @@ def books(request):
 
 
 def upload(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     book_id = request.POST.get('id')
     title = request.POST.get('title')
@@ -53,7 +53,7 @@ def uploadForm(request):
 
 
 def detail(request, book_id):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     cursor.execute("Select * from books where id = " + str(book_id))
     rows = cursor.fetchone()
@@ -63,7 +63,7 @@ def detail(request, book_id):
 
 
 def updated(request, book_id):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     title = request.POST.get('title')
     author = request.POST.get('author')
@@ -82,7 +82,7 @@ def updated(request, book_id):
 
 
 def edit(request, book_id):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     cursor.execute("Select * from books where id = " + str(book_id))
     rows = cursor.fetchone()
@@ -92,7 +92,7 @@ def edit(request, book_id):
 
 
 def delete(request, book_id):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     cursor.callproc('delete_book', [book_id])
     connection.commit()
@@ -101,7 +101,7 @@ def delete(request, book_id):
 
 
 def sort(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     sorting_filter = request.POST['sorting-name']
     order_type = request.POST['order_type']
     cursor = connection.cursor()
@@ -116,7 +116,7 @@ def sort(request):
 
 
 def search(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     searching_object = request.POST['input-search']
     searching_filter = request.POST['searching-name']
     cursor = connection.cursor()
@@ -131,7 +131,7 @@ def search(request):
 
 
 def filter(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     f_author = request.POST['author']
 
     cursor = connection.cursor()
@@ -146,7 +146,7 @@ def filter(request):
 
 
 def statistics(request):
-    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding="UTF8")
+    connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     books = pd.read_sql("SELECT * FROM books", con=connection)
     books = books.convert_dtypes()
     books.columns = books.columns.str.lower()
