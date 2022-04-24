@@ -1,0 +1,231 @@
+body {
+  background-color: #fffaf5;
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #241400;
+}
+
+.btn {
+  border: 1px solid #e16a00;
+  background: #e16a00;
+  color: white;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  border: 1px solid #e16a00;
+  color: #e16a00;
+  background-color: inherit;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  display: inline;
+}
+
+.nav-lin {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.search__input:focus {
+  box-shadow: 0 0 10px #e16a00;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 75px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-caption__title {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.carousel-caption__description {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.carousel-caption__btn {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.carousel-caption__btn:hover {
+  background-color: white;
+}
+
+.section__header{
+  margin-bottom: 30px;
+}
+
+.section__title{
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.book-list__menu-item {
+  font-weight: 400;
+  font-size: 13px;
+}
+.book-card {
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.book-card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 0 0 50px 0;
+}
+
+.book-card__image {
+  height: 190px;
+}
+
+.book-card__price {
+  margin: 10px 0 0 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.book-card__title {
+  margin: 18px 0 0 0;
+  font-weight: 700;
+  font-size: 12px;
+}
+.book-card__description {
+  margin: 5px 0 0 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.book-card__basket{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+.book-card__button {
+  /* margin: 19px 0 0 0; */
+  height: 30px;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+
+
+.catolog__item{
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  transition: all .5s; 
+}
+
+.catolog__item:hover{
+  cursor: pointer;
+  box-shadow: 0px 4px 11px #e16a00;
+  color: #e16a00;
+}
+
+.about__item{
+  background-color: white;
+  border: 1px solid red;
+}
+.about-item{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
+.about-item__desc{
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+
+.about-item__number{
+  font-weight: 900;
+  font-size: 50px;
+  margin: 0;
+}
+
+.dostavka__desc{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.dostavka__link{
+  display: block;
+  text-decoration: none;
+  color: #241400;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.dostavka__link:hover{
+  color: #e16a00;
+}
+
+.social__item{
+  margin-right: 10px;
+}
+
+.social__item svg{
+  fill: #241400;
+}
+.social__item svg:hover{
+  fill: #e16a00;
+}
+
+footer{
+  margin-top: 20px;
+  background-color: #333333;
+}
+
+footer a{
+  text-decoration: none;
+}
+footer a{
+  color: white;
+  transition: all .3s;
+}
+
+footer a:hover{
+  color: #e16a00;
+}

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Форма</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бутсы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Кроссовки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Мячи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Детская</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Блог</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex search">
+                            <input class="form-control search__input me-2" type="search" placeholder="Поиск" aria-label="Search" />
+                            <button class="btn" type="submit">Поиск</button>
+                        </form>
+                        <div>
+                            <a href="#" class="ms-2"><img src="image/akar-icons_heart.png" alt="" /></a>
+                            <a href="#" class="ms-2"><img src="image/cil_cart.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- Carousel -->
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/bg1.jpg" alt="" />
+
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 class="carousel-caption__title">Форма</h1>
+                                <p class="carousel-caption__description" style="color: red; ">
+                                    Формы
+                                </p>
+                                <p>
+                                    <a class="btn carousel-caption__btn" href="#">Перейти в каталог</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/bg2.jpg" alt="" />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 class="carousel-caption__title">Форма.</h1>
+                  <p class="carousel-caption__description">
+                    
+                  </p>
+                  <p>
+                    <a class="btn carousel-caption__btn" href="#"
+                      >Перейти в каталог</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/bg3.jpg" alt="" />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 class="carousel-caption__title">Форма</h1>
+                  <p class="carousel-caption__description">
+                    
+                  </p>
+                  <p>
+                    <a class="btn carousel-caption__btn" href="#"
+                      >Перейти в каталог</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="book-list section">
+        <div class="container">
+          <div class="book-list__header section__header">
+            <div class="row">
+              <div class="col-4">
+                <h3 class="book-list__title section__title">
+                  Формы
+                </h3>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+              <div class="book-card">
+                <div class="book-card__content">
+                  <img
+                    class="book-card__image"
+                    src="image/bookCover.jpg"
+                    alt=""
+                  />
+                  <p class="book-card__price">300$</p>
+                  <p class="book-card__title">Barselona</p>
+                  <p class="book-card__description">Форма</p>
+                  <div class="book-card__basket">
+                    <button class="book-card__button btn">в корзину</button>
+                    <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Real Madrid</p>
+                            <p class="book-card__description">Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Arsenal</p>
+                            <p class="book-card__description">Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Juventus</p>
+                            <p class="book-card__description">Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">PSG</p>
+                            <p class="book-card__description">Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Chealsia</p>
+                            <p class="book-card__description">Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-list section">
+        <div class="container">
+            <div class="book-list__header section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="book-list__title section__title">Бутсы</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Barselona</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Real Madrid</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Arsenal</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Juventus</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">PSG</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Chealsia</p>
+                            <p class="book-card__description">Бутсы</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="book-list section">
+        <div class="container">
+            <div class="book-list__header section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="book-list__title section__title">Кроссовки</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Barselona</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Real Madrid</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Arsenal</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Juventus</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">PSG</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Chealsia</p>
+                            <p class="book-card__description">Кроссовки</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="book-list section">
+        <div class="container">
+            <div class="book-list__header section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="book-list__title section__title">Мячи</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Barselona</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Real Madrid</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Arsenal</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Juventus</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">PSG</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Chealsia</p>
+                            <p class="book-card__description">Мяч</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="book-list section">
+        <div class="container">
+            <div class="book-list__header section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="book-list__title section__title">Детская</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Barselona</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Real Madrid</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Arsenal</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Juventus</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">PSG</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="book-card">
+                        <div class="book-card__content">
+                            <img class="book-card__image" src="image/bookCover.jpg" alt="" />
+                            <p class="book-card__price">300$</p>
+                            <p class="book-card__title">Chealsia</p>
+                            <p class="book-card__description">Детская Форма</p>
+                            <div class="book-card__basket">
+                                <button class="book-card__button btn">в корзину</button>
+                                <a href="#"><img src="image/heart.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="catalog section">
+        <div class="container">
+            <div class="catalog__header section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="catalog__title section__title">Католог</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3 catolog__item">Форма</div>
+                <div class="col-3 catolog__item">Бутсы</div>
+                <div class="col-3 catolog__item">Кроссовки</div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3 catolog__item">Мячи</div>
+                <div class="col-3 catolog__item">Детская</div>
+                <div class="col-3 catolog__item">Блог</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about section">
+        <div class="container">
+            <div class="section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="about__title section__title">О магазине</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="about-item">
+                        <h4 class="about-item__number">35</h4>
+                        <p class="about-item__desc">Филиалов по всей стране</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="about-item">
+                        <h4 class="about-item__number">898</h4>
+                        <p class="about-item__desc">Товаров в каталоге</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="about-item">
+                        <h4 class="about-item__number">8659</h4>
+                        <p class="about-item__desc">Покупателей</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="about-item">
+                        <h4 class="about-item__number">72</h4>
+                        <p class="about-item__desc">Часоа доставка по городам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="social section">
+        <div class="container">
+            <div class="section__header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section__title">
+                            Следите за нами в социальных сетях
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="" class="social__item"><svg
+                  width="63"
+                  height="63"
+                  viewBox="0 0 63 63"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 31.6759C0 47.3366 11.3741 60.3592 26.25 63V40.2491H18.375V31.5H26.25V24.4991C26.25 16.6241 31.3241 12.2509 38.5009 12.2509C40.7741 12.2509 43.2259 12.6 45.4991 12.9491V21H41.475C37.6241 21 36.75 22.9241 36.75 25.3759V31.5H45.15L43.7509 40.2491H36.75V63C51.6259 60.3592 63 47.3393 63 31.6759C63 14.2538 48.825 0 31.5 0C14.175 0 0 14.2538 0 31.6759Z"
+                  />
+                </svg>
+              </a>
+                    <a href="" class="social__item"><svg
+                  width="63"
+                  height="43"
+                  viewBox="0 0 63 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M61.6875 7.08089C61.3308 5.80837 60.6359 4.6563 59.6768 3.74714C58.6905 2.81003 57.4818 2.13969 56.1645 1.79939C51.2348 0.500016 31.4843 0.500017 31.4843 0.500017C23.2505 0.406337 15.0188 0.818362 6.83553 1.73377C5.51828 2.0992 4.31176 2.78452 3.32328 3.72877C2.35203 4.66327 1.64853 5.81564 1.28103 7.07827C0.398227 11.8341 -0.0307003 16.663 3.3192e-05 21.5C-0.0314668 26.3326 0.396408 31.16 1.28103 35.9218C1.64066 37.1791 2.34153 38.3263 3.31541 39.2529C4.28928 40.1795 5.50203 40.8489 6.83553 41.2033C11.8309 42.5 31.4843 42.5 31.4843 42.5C39.7285 42.5938 47.9708 42.1818 56.1645 41.2663C57.4818 40.926 58.6905 40.2556 59.6768 39.3185C60.648 38.3919 61.3384 37.2395 61.6849 35.9848C62.5908 31.2308 63.0312 26.3998 63 21.5604C63.0682 16.7005 62.6283 11.8467 61.6875 7.07827V7.08089ZM25.2053 30.488V12.5146L41.6378 21.5026L25.2053 30.488Z"
+                  />
+                </svg>
+              </a>
+                    <a href="" class="social__item"><svg
+                  width="59"
+                  height="59"
+                  viewBox="0 0 59 59"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.5956 0.79825C20.6748 0.6565 21.6565 0.625 29.5 0.625C37.3435 0.625 38.3253 0.659125 41.4018 0.79825C44.4783 0.937375 46.5782 1.42825 48.4157 2.13962C50.3399 2.86675 52.0855 4.00337 53.5292 5.47337C54.9992 6.9145 56.1333 8.6575 56.8578 10.5842C57.5718 12.4217 58.06 14.5217 58.2018 17.593C58.3435 20.6774 58.375 21.6591 58.375 29.5C58.375 37.3435 58.3409 38.3252 58.2018 41.4044C58.0626 44.4756 57.5718 46.5756 56.8578 48.4131C56.1332 50.3401 54.9974 52.086 53.5292 53.5292C52.0855 54.9992 50.3399 56.1332 48.4157 56.8577C46.5782 57.5717 44.4782 58.06 41.407 58.2017C38.3252 58.3435 37.3435 58.375 29.5 58.375C21.6565 58.375 20.6748 58.3409 17.5956 58.2017C14.5244 58.0626 12.4244 57.5717 10.5869 56.8577C8.65992 56.1331 6.91403 54.9973 5.47075 53.5292C4.00175 52.0873 2.86495 50.3422 2.13963 48.4157C1.42825 46.5782 0.94 44.4782 0.79825 41.407C0.6565 38.3226 0.625 37.3409 0.625 29.5C0.625 21.6565 0.659125 20.6747 0.79825 17.5982C0.937375 14.5217 1.42825 12.4217 2.13963 10.5842C2.86602 8.65771 4.00369 6.9127 5.47337 5.47075C6.91461 4.00207 8.65874 2.86529 10.5843 2.13962C12.4218 1.42825 14.5218 0.94 17.593 0.79825H17.5956ZM41.1681 5.99575C38.1231 5.85662 37.2096 5.82775 29.5 5.82775C21.7904 5.82775 20.8769 5.85662 17.8319 5.99575C15.0152 6.12437 13.4875 6.59425 12.469 6.99062C11.1224 7.51562 10.159 8.13775 9.14838 9.14837C8.19037 10.0804 7.4531 11.215 6.99062 12.469C6.59425 13.4875 6.12437 15.0152 5.99575 17.8319C5.85663 20.8769 5.82775 21.7904 5.82775 29.5C5.82775 37.2096 5.85663 38.1231 5.99575 41.1681C6.12437 43.9847 6.59425 45.5125 6.99062 46.531C7.45262 47.7831 8.19025 48.9197 9.14838 49.8516C10.0803 50.8097 11.2169 51.5474 12.469 52.0094C13.4875 52.4057 15.0152 52.8756 17.8319 53.0042C20.8769 53.1434 21.7878 53.1722 29.5 53.1722C37.2122 53.1722 38.1231 53.1434 41.1681 53.0042C43.9847 52.8756 45.5125 52.4057 46.531 52.0094C47.8776 51.4844 48.841 50.8622 49.8516 49.8516C50.8097 48.9197 51.5474 47.7831 52.0094 46.531C52.4058 45.5125 52.8756 43.9847 53.0042 41.1681C53.1434 38.1231 53.1722 37.2096 53.1722 29.5C53.1722 21.7904 53.1434 20.8769 53.0042 17.8319C52.8756 15.0152 52.4058 13.4875 52.0094 12.469C51.4844 11.1224 50.8623 10.159 49.8516 9.14837C48.9196 8.19044 47.785 7.45318 46.531 6.99062C45.5125 6.59425 43.9847 6.12437 41.1681 5.99575ZM25.8119 38.4014C27.8716 39.2588 30.1651 39.3745 32.3007 38.7288C34.4363 38.083 36.2814 36.7159 37.521 34.8609C38.7605 33.0059 39.3176 30.778 39.0971 28.5579C38.8766 26.3378 37.8921 24.2631 36.3119 22.6881C35.3045 21.6814 34.0864 20.9105 32.7454 20.431C31.4043 19.9515 29.9736 19.7753 28.5563 19.9151C27.139 20.0549 25.7703 20.5072 24.5487 21.2395C23.3272 21.9717 22.2832 22.9657 21.4919 24.1499C20.7006 25.334 20.1817 26.6789 19.9726 28.0876C19.7635 29.4964 19.8693 30.934 20.2824 32.297C20.6956 33.6599 21.4058 34.9143 22.3619 35.9699C23.318 37.0254 24.4963 37.8559 25.8119 38.4014ZM19.0052 19.0052C20.3834 17.6271 22.0196 16.5338 23.8203 15.7879C25.621 15.0421 27.5509 14.6582 29.5 14.6582C31.4491 14.6582 33.379 15.0421 35.1797 15.7879C36.9804 16.5338 38.6166 17.6271 39.9948 19.0052C41.3729 20.3834 42.4662 22.0196 43.2121 23.8203C43.9579 25.621 44.3418 27.5509 44.3418 29.5C44.3418 31.4491 43.9579 33.379 43.2121 35.1797C42.4662 36.9804 41.3729 38.6166 39.9948 39.9947C37.2114 42.7781 33.4363 44.3418 29.5 44.3418C25.5637 44.3418 21.7886 42.7781 19.0052 39.9947C16.2219 37.2114 14.6582 33.4363 14.6582 29.5C14.6582 25.5637 16.2219 21.7886 19.0052 19.0052ZM47.6335 16.8685C47.975 16.5463 48.2484 16.1589 48.4375 15.7292C48.6267 15.2994 48.7276 14.8361 48.7345 14.3667C48.7413 13.8972 48.6539 13.4312 48.4774 12.9961C48.3009 12.5611 48.0389 12.1658 47.7069 11.8339C47.3749 11.5019 46.9797 11.2399 46.5446 11.0634C46.1096 10.8869 45.6435 10.7994 45.1741 10.8063C44.7046 10.8131 44.2413 10.9141 43.8116 11.1032C43.3818 11.2923 42.9944 11.5657 42.6722 11.9072C42.0457 12.5715 41.7027 13.4537 41.716 14.3667C41.7293 15.2797 42.0979 16.1516 42.7435 16.7972C43.3892 17.4429 44.2611 17.8115 45.1741 17.8248C46.0871 17.8381 46.9693 17.4951 47.6335 16.8685Z"
+                  />
+                </svg>
+              </a>
+                    <a href="" class="social__item"><svg
+                  width="63"
+                  height="63"
+                  viewBox="0 0 63 63"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.1695 0H21.8305C4.18262 0 -0.000976562 4.18359 -0.000976562 21.8315V41.1705C-0.000976562 58.8184 4.18262 63.002 21.8305 63.002H41.1695C58.8174 63.002 63.001 58.8184 63.001 41.1705V21.8315C63.001 4.18359 58.7761 0 41.1695 0ZM50.8597 44.9426H46.2863C44.5538 44.9426 44.0203 43.5684 40.9037 40.4106C38.1967 37.7862 36.9977 37.4378 36.3303 37.4378C35.3873 37.4378 35.1196 37.7035 35.1196 38.997V43.1294C35.1196 44.2378 34.7711 44.9033 31.8376 44.9033C26.9866 44.9033 21.6041 41.9698 17.83 36.5046C12.1383 28.4957 10.5811 22.4969 10.5811 21.2566C10.5811 20.5892 10.8468 19.9651 12.1285 19.9651H16.7117C17.8713 19.9651 18.3123 20.4986 18.7632 21.7389C21.0292 28.2811 24.8033 34.0121 26.3606 34.0121C26.9355 34.0121 27.2012 33.7463 27.2012 32.2796V25.5229C27.026 22.4063 25.3861 22.1386 25.3861 21.0322C25.3861 20.4986 25.8271 19.9651 26.5338 19.9651H33.7414C34.716 19.9651 35.0743 20.4986 35.0743 21.6464V30.7617C35.0743 31.7461 35.5153 32.0946 35.7811 32.0946C36.3559 32.0946 36.8481 31.7461 37.9132 30.679C41.205 26.9876 43.5635 21.296 43.5635 21.296C43.8707 20.6286 44.4042 20.0045 45.5638 20.0045H50.147C51.5212 20.0045 51.8283 20.7113 51.5212 21.6956C50.9463 24.3613 45.3374 32.2777 45.3374 32.2777C44.855 33.077 44.67 33.4254 45.3374 34.3173C45.8296 34.9847 47.4301 36.3687 48.4952 37.609C50.4542 39.8337 51.9602 41.7001 52.3619 42.9916C52.8127 44.2733 52.1473 44.9407 50.8538 44.9407L50.8597 44.9426Z"
+                  />
+                </svg>
+              </a>
+                    <a href="" class="social__item"><svg
+                  width="61"
+                  height="49"
+                  viewBox="0 0 61 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M60.0627 5.95964C57.8708 6.93089 55.5162 7.58714 53.0408 7.88377C55.595 6.35547 57.5058 3.95012 58.4168 1.11652C56.0172 2.54187 53.3909 3.54516 50.6521 4.08277C48.8103 2.11629 46.3709 0.812875 43.7125 0.374888C41.054 -0.0630987 38.3254 0.388847 35.9501 1.66056C33.5748 2.93227 31.6859 4.95259 30.5765 7.40787C29.4671 9.86314 29.1994 12.616 29.8148 15.239C24.9525 14.9949 20.1959 13.7311 15.8536 11.5296C11.5113 9.3282 7.68043 6.23832 4.6096 2.46052C3.5596 4.27177 2.95585 6.37177 2.95585 8.60827C2.95468 10.6216 3.45048 12.6042 4.39928 14.3799C5.34807 16.1557 6.72052 17.6699 8.39485 18.788C6.45307 18.7262 4.55414 18.2016 2.8561 17.2576V17.4151C2.8559 20.239 3.83268 22.9759 5.6207 25.1615C7.40872 27.3471 9.89785 28.8468 12.6657 29.4061C10.8644 29.8936 8.97586 29.9655 7.14272 29.6161C7.92365 32.0459 9.44484 34.1706 11.4933 35.6928C13.5418 37.2151 16.015 38.0586 18.5667 38.1054C14.235 41.5059 8.88543 43.3504 3.37847 43.3423C2.40297 43.3425 1.4283 43.2856 0.459473 43.1716C6.04935 46.7657 12.5564 48.6732 19.202 48.6658C41.6982 48.6658 53.9963 30.0335 53.9963 13.874C53.9963 13.349 53.9832 12.8188 53.9596 12.2938C56.3517 10.5638 58.4166 8.42162 60.0575 5.96752L60.0627 5.95964Z"
+                  />
+                </svg>
+              </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="my-">
+        <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4 text-white">Популярное</h5>
+
+                        <ul class="list-unstyled mb-4">
+                            <li>
+                                <a href="#!">Мячи</a>
+                            </li>
+                            <li>
+                                <a href="#!">Формы</a>
+                            </li>
+                            <li>
+                                <a href="#!">Бутсы</a>
+                            </li>
+                            <li>
+                                <a href="#!">Кроссовки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4 text-white">Информация</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#!">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#!">О магазине</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4 text-white">Помощь</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#!">Возврат товара</a>
+                            </li>
+                            <li>
+                                <a href="#!">Помощь покупателю</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4 text-white">
+                            +7 (707) 570-67-57
+                        </h5>
+
+                        <button type="submit" class="btn btn-outline-white btn-block">
+                  Заказать звонок
+                </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3 border-top border-white text-white">
+                Все права защищены © 2022-2022 Условия использования | Политика конфиденциальности
+                <!-- <a class="text-white" href="https://mdbootstrap.com/"
+              >MDBootstrap.com</a
+            > -->
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- End of .container -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
