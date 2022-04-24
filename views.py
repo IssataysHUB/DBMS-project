@@ -10,11 +10,11 @@ from django.core.files.storage import FileSystemStorage
 
 
 
-def books(request):
+def index(request):
     connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
     print("Connected to Oracle")
-    sql = "Select * from books"
+    sql = "Select * from index"
     cursor.execute(sql)
     rows = cursor.fetchall()
 
@@ -38,7 +38,7 @@ def upload(request):
     author = request.POST.get('author')
     price = request.POST.get('price')
     isbn = request.POST.get('isbn')
-    cursor.callproc('insert_all_books', [book_id, title, author,
+    cursor.callproc('insert_all_football', [book_id, title, author,
                                         isbn, price])
     upload = request.FILES['upload']
     fss = FileSystemStorage()
@@ -55,7 +55,7 @@ def uploadForm(request):
 def detail(request, book_id):
     connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
-    cursor.execute("Select * from books where id = " + str(book_id))
+    cursor.execute("Select * from football where id = " + str(book_id))
     rows = cursor.fetchone()
     connection.commit()
     cursor.close()
@@ -78,13 +78,13 @@ def updated(request, book_id):
                                     price])
     connection.commit()
     cursor.close()
-    return redirect('/books/' + str(book_id))
+    return redirect('/football/' + str(book_id))
 
 
 def edit(request, book_id):
     connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
     cursor = connection.cursor()
-    cursor.execute("Select * from books where id = " + str(book_id))
+    cursor.execute("Select * from football where id = " + str(book_id))
     rows = cursor.fetchone()
     connection.commit()
     cursor.close()
@@ -105,7 +105,7 @@ def sort(request):
     sorting_filter = request.POST['sorting-name']
     order_type = request.POST['order_type']
     cursor = connection.cursor()
-    cursor.execute("Select * from books order by {} {}".format(sorting_filter, order_type))
+    cursor.execute("Select * from football order by {} {}".format(sorting_filter, order_type))
     rows = cursor.fetchall()
     paginator = Paginator(rows, 10)
     page_number = request.GET.get('page')
@@ -120,7 +120,7 @@ def search(request):
     searching_object = request.POST['input-search']
     searching_filter = request.POST['searching-name']
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM books WHERE {} = '{}'".format(searching_filter, searching_object))
+    cursor.execute("SELECT * FROM football WHERE {} = '{}'".format(searching_filter, searching_object))
     rows = cursor.fetchall()
     paginator = Paginator(rows, 10)
     page_number = request.GET.get('page')
@@ -135,7 +135,7 @@ def filter(request):
     f_author = request.POST['author']
 
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM books WHERE author = '{}'".format(f_author))
+    cursor.execute("SELECT * FROM football WHERE author = '{}'".format(f_author))
     rows = cursor.fetchall()
     paginator = Paginator(rows, 10)
     page_number = request.GET.get('page')
@@ -147,9 +147,9 @@ def filter(request):
 
 def statistics(request):
     connection = cx_Oracle.connect("hr", "hr", "localhost:1521/orclpdb", encoding="UTF8")
-    books = pd.read_sql("SELECT * FROM books", con=connection)
-    books = books.convert_dtypes()
-    books.columns = books.columns.str.lower()
+    football = pd.read_sql("SELECT * FROM football", con=connection)
+    football = football.convert_dtypes()
+    football.columns = football.columns.str.lower()
     # pivot2 = cars.pivot_table(index='fueltype', values='manufacturer', aggfunc='count')
     # pivot2.sort_values(by='manufacturer', ascending=False).head(9).plot(figsize=(15, 6), style='o-', grid=True)
     # plt.title("The count of cars grouped by fueltype")
